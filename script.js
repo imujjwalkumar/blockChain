@@ -22,7 +22,6 @@ const main = async () => {
         value: ethers.utils.parseEther("0.1")
     })
 
-    await tx.wait()
     console.log(tx)
 
     const senderBalanceAfter = await provider.getBalance(sendAddress)
