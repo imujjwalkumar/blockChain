@@ -6,7 +6,7 @@ const a=[{name:"ujjwal",rollno:25},
 		{name:"kumar",rollno:26}
 	]
 const limiter=rateLimit({
-	max:4,
+	max:2,
 	windowsMs:10000
 })
 app.get('/limit',limiter,(req,res)=>{
